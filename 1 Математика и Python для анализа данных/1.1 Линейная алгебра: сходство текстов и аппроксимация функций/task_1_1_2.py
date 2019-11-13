@@ -29,7 +29,6 @@ y = np.array([f(1), f(4), f(10), f(15)])
 W = solve(X, y)
 
 
-
 if __name__ == '__main__':
     print(f(1), f(4), f(10), f(15))
     print(' '.join([str(w) for w in W]))

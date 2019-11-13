@@ -1,10 +1,13 @@
 import numpy as np
 from scipy.optimize import minimize, differential_evolution
 
+
 bounds = [(1, 30)]
+
 
 def f(x):
     return np.sin(x/5) * np.exp(x/10) + 5 * np.exp(-x/2)
+
 
 def h(x):
     return int(f(x))
