@@ -21,7 +21,8 @@ if __name__ == '__main__':
     result_1_30 = minimize(f, 30, method='BFGS')  # fun: -11.898894665981285
 
     with open('submission-1.txt', 'w') as file:
-        file.write(' '.join([str(round(result_1_2.fun, 2)), str(round(result_1_30.fun, 2))]))
+        file.write(' '.join([str(round(result_1_2.fun, 2)),
+                             str(round(result_1_30.fun, 2))]))
 
     # Задача №2 Глобальная оптимизация
 
